@@ -7,17 +7,19 @@ let firstCard = 6
 let secondCard = 9
 let sum = firstCard + secondCard
 let hasBlackJack = false 
+let isAlive = true 
 
+let message = ""
 
-if (sum < 21) {
-    console.log("Do you want to draw a new card?🙂")
-} else if (sum === 21) {
-    console.log("Wohoo! You've got Blackjack🥳")
+if (sum <= 21) 
+{
+    message = "Do you want to draw a new card🙂?"
+} else if (sum === 21) 
+{
+    message = "Wohoo! You've got Blackjack🥳"
     hasBlackJack = true
-} else (sum > 21){
-    console.log("You're out of the game😭")
+} else (sum > 21) 
+{
+    message = "You're out of the game😭"
+    isAlive = false
 }
-
-
-// cash out!
-console.log(hasBlackJack)

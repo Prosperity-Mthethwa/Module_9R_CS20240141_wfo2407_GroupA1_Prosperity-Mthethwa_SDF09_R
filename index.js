@@ -1,8 +1,3 @@
-// 1. Create two variables, firstCard and secondCard. 
-// Set their values to a random number between 2-11
-
-// 2. Create a variable, sum, and set it to the sum of the two cards
-
 let firstCard = 10
 let secondCard = 11
 let sum = firstCard + secondCard 
@@ -11,6 +6,7 @@ let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
 
 console.log(sumEl)
 

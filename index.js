@@ -12,7 +12,7 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 
-playerEl.textContent = player.name = ": $" + player.chips
+playerEl.textContent = player.name = "Prosperity: $" + player.chips
 
 function getRandomCard(){
     let randomNumber = Math.floor(Math.random()*13) + 1
@@ -38,7 +38,7 @@ function startGame() {
 function renderGame() {
     cardsEl.textContent = "Cards: "
     for (let i = 0; i < cards.length; i++) {
-        cardsEl.textContent += cards[i] + ""
+        cardsEl.textContent += cards[i] + " "
     }
     
     sumEl.textContent = "Sum: " + sum
